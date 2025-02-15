@@ -8,11 +8,15 @@ function App() {
   };
   return (
     <div>
-      <ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem} />
+      <ListGroup
+        items={items}
+        heading="Cities"
+        onSelectItem={handleSelectItem}
+      />
       <Alert>
         Hello <span>World</span>{" "}
       </Alert>
-      <Button />
+      <Button onClick={() => console.log("Clicked")}>My button</Button>
     </div>
   );
 }
